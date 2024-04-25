@@ -21,6 +21,7 @@ function App() {
   const [date, setDate] = useState("");
   const [smallDogsQuantity, setSmallDogsQuantity] = useState(0);
   const [bigDogsQuantity, setBigDogsQuantity] = useState(0);
+  const [error, setError] = useState("");
 
   const fetchBestPrice = async () => {
     try {
@@ -48,7 +49,12 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    fetchBestPrice();
+    if (smallDogsQuantity === 0 && bigDogsQuantity === 0) {
+      setError("Pelo menos um dos campos de quantidade deve ser maior que zero.");
+    } else {
+      setError("");
+      fetchBestPrice();
+    }
   };
 
   return (
@@ -90,6 +96,7 @@ function App() {
                 defaultValue={0}
                 onChange={(value) => setSmallDogsQuantity(parseInt(value))}
                 mb={3}
+                min={0}
               >
                 <NumberInputField />
                 <NumberInputStepper>
@@ -106,6 +113,7 @@ function App() {
               <NumberInput
                 defaultValue={0}
                 onChange={(value) => setBigDogsQuantity(parseInt(value))}
+                min={0}
               >
                 <NumberInputField />
                 <NumberInputStepper>
@@ -120,6 +128,11 @@ function App() {
                 Encontrar melhor PetShop
               </Button>
             </Center>
+            {error && (
+              <Text fontSize="sm" color="red">
+                {error}
+              </Text>
+            )}
           </form>
         </Stack>
       </Card>
@@ -128,3 +141,4 @@ function App() {
 }
 
 export default App;
+ 
