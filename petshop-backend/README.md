@@ -1,4 +1,4 @@
-# Pethop Backend
+# PetShop Backend
 O backend do projeto do Canil do Senhor Eduardo é a api responsavel por registrar todos os PetShops com seus respectivos dados, e realizar os calculos para decidir qual o melhor PetShop.
 
 
