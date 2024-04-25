@@ -37,21 +37,21 @@ Configure as variáveis de ambiente de acordo com os seus dados para rodar a apl
 ## Instalação da aplicação
 
 Primeiramente, faça o clone do repositório:
-
-> https://github.com/larisilvapedrosa/Canil_Senhor_Eduardo.git
-
+```sh
+ https://github.com/larisilvapedrosa/Canil_Senhor_Eduardo.git
+```
 Feito isso, acesse o projeto:
-
-> cd Canil_Senhor_Eduardo\petshop-backend
-
+```sh
+ cd Canil_Senhor_Eduardo\petshop-backend
+```
 É preciso compilar o código e baixar as dependências do projeto:
-
-> mvn clean package
-
+```sh
+ mvn clean package
+```
 Finalizado esse passo, vamos iniciar a aplicação:
-
-> mvn spring-boot:run
-
+```sh
+ mvn spring-boot:run
+```
 Pronto. A aplicação está disponível em http://localhost:8080/api/v1
 
 > Tomcat started on port(s): 8080 (http) with contextpath '/api/v1'
