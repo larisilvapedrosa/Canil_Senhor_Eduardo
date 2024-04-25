@@ -9,21 +9,23 @@ Desenvolvido em TypeScript e react, o frontend é responsavel por capturar os va
 
   ## Como rodar
   1. **Clonar o repositório:** clonar o repositorio do GIT para seu ambiente local
-     
-     > git clone https://github.com/larisilvapedrosa/Canil_Senhor_Eduardo.git
-
+      ```sh
+     git clone https://github.com/larisilvapedrosa/Canil_Senhor_Eduardo.git
+      ```
   2. **Navegar para o diretorio do projeto:** Ja com a IDE ou o terminal aberto, navegue ate o diretorio do projeto:
 
-     > cd petShop-Frontend
+     ```sh
+     cd Canil_Senhor_Eduardo\petShop-Frontend
+     ```
 
   3. **Instalar dependencias:** Antes de executar a aplicação é necessário instalar as dependencia contidas no arquivo "package.json"
-
-     > npm install
-
+      ```sh
+     npm install
+      ```
   4. **Iniciar Servidor:** Agora com todas as dependencias voce poderá iniciar o servidor
-
-     > npm run dev
-
+      ```sh
+     npm run dev
+      ```
      Com este comando irá aparecer a seguinte mensagem no terminal: <br />
        VITE v5.2.10  ready in 1881 ms <br />
 
@@ -35,9 +37,9 @@ Desenvolvido em TypeScript e react, o frontend é responsavel por capturar os va
 
   ## Como usar a aplicação
   1. Para usar a aplicação preencha os campos necessários para realizar a busca do melhor preço em petshops para banho dos seus cãezinhos:
-  *Data: Selecione a data desejada para o banho dos cães.
-  *Cães Pequenos: Informe a quantidade de cães pequenos que irão tomar banho.
-  *Cães Grandes: Informe a quantidade de cães grandes que irão tomar banho.
+    - Data: Selecione a data desejada para o banho dos cães.
+    - Cães Pequenos: Informe a quantidade de cães pequenos que irão tomar banho.
+    - Cães Grandes: Informe a quantidade de cães grandes que irão tomar banho.
 
   2. Buscar melhor preço: Após preencher os campos, clique no botão "Encontrar melhor PetShop".
 
